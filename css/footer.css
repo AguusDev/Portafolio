@@ -1,0 +1,51 @@
+.footer{
+    background-color: #07090F;
+    height: 300px;
+    padding: 30px;
+}
+.p-footer{
+    color: var(--blanco);
+    text-align: center;
+}
+.p__footer-span{
+    font-weight: bold;
+    font-size: 17px;
+}
+.puesto{
+    font-size: 17px;
+    font-weight: bold;
+    color: #FE5F55;
+    background-color:#FEFCFD ;
+    padding: 3px;
+}
+
+.copyright{
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* Tamaño Para Tablet */
+
+@media (min-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .p-footer{
+        font-size: 23px;
+    }
+    .p__footer-span{
+        font-size: 26px;
+    }
+    .puesto{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .copyright{
+        font-size: 21px;
+    }
+}

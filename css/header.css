@@ -1,0 +1,230 @@
+
+:root{
+    --violeta:#662E9B;
+    --blanco:#EEE2DE;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    background-image: linear-gradient(to top , #9336B4, #090580);
+}
+
+header{
+    width: 100%;
+}
+.navegacion{
+    /* padding: 15px 0; */
+    background-color: var(--violeta);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.link-nav{
+    width: 100%;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 5px;
+    text-align: center;
+    transition: 0.5s all;
+    margin: 5px 0;
+}
+
+.link-nav:hover{
+    background-image: linear-gradient(to left, #40128B ,#9336B4);
+    transform: scale(1.1);
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+
+    margin: 30% 0 10% 0;
+}
+
+.p-email{
+    font-size: 15px;
+    color: var(--blanco);
+    letter-spacing: 1px;
+}
+
+.img-perfil{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 15px 0;
+    border-radius: 100%;
+}
+
+.presentacion{
+    margin: 0 0 5% 5px;
+}
+
+.presentacion-title{
+    font-size: 25px;
+    color: var(--blanco);
+    text-align: center;
+}
+
+.presentacion-p{
+    text-align: left;
+    margin: 15px 0 10px 17px;
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+.redes{
+    margin: 15px 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-redes{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+/* Tamaño Para Tablet */
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+
+    .cabecera{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+
+        margin: 15% 0 0 0;
+    }
+
+    .link-nav{
+        margin: 0;
+        font-size: 25px;
+        
+    }
+
+    .img-container{
+        margin: 0;
+    }
+
+    .img-perfil{
+        width: 300px;
+        height: 300px;
+        margin: 0;
+    }
+
+    .p-email{
+        font-size: 20px;
+    }
+
+    .presentacion{
+        height: 100%;
+        margin: 0s;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        
+    }
+
+    .presentacion-title{
+        font-size: 28px;
+    }
+
+    .presentacion-p{
+        font-size: 22px;
+    }
+
+    .redes{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        margin: 5% 0 0 0;
+    }
+
+    .link-redes{
+        font-size: 25px;
+    }
+
+
+}
+
+
+/* Tamaño Para Escritorio */
+
+@media (min-width: 920px) {
+    .navegacion{
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    .link-nav{
+        width: 90px;
+        font-size: 14px;
+
+    }
+    .cabecera{
+        margin: 5% 0 0 0;
+        padding: 0 20%;
+    }
+    .img-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .p-email{
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+    .presentacion{
+        margin: 0;
+    }
+    .presentacion-title{
+        font-size: 30px;
+        text-align: left;
+    }
+    .presentacion-p{
+        font-size: 17px;
+        margin: 0 15px 0 0;
+    }
+    .redes{
+        margin: 0 0 0 30% ;
+        
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 20px;
+    }
+    .link-redes{
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    
+}

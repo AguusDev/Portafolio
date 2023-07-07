@@ -1,0 +1,165 @@
+.formulario-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    margin: 10% 0;
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 20px;
+}
+
+.title-contacto{
+    font-weight: 900;
+    color: var(--blanco);
+    
+}
+
+
+.p-contacto{
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+.formulario{
+    margin: 25px 0;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+input ,textarea{
+    width: 100%;
+    border-style: none;
+    outline-style: none;
+    font-size: 18px;
+    padding: 20px 0 10px 10px;
+    border-radius: 5px;
+    background-color: rgba(265,265,265,0.1);
+    color: var(--blanco);
+}
+
+textarea{
+    resize: none;
+    height: 200px;
+}
+
+.input-container{
+    position: relative;
+}
+
+.label__input{
+    position: absolute;
+    top:20px;
+    left: 15px;
+    color: #DCD9DE;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+/* FOCUS */
+
+.label__input-active{
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    color: #FF459A;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.input__active{
+    border-bottom: 3px solid #FF459A;
+}
+
+/* FIN FOCUS */
+
+.boton-enviar{
+    padding: 15px;
+    width: 45%;
+    border-style: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, #ea52f8 , #0066ff);
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--blanco);
+}
+
+/* Tamaño Para Tablet */
+
+@media (min-width: 768px) {
+    .title-contacto{
+        font-size: 40px;
+    }
+    .p-contacto{
+        font-size: 22px;
+    }
+    .label__input{
+        font-size: 22px;
+    } 
+    .label__input-active{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #FF459A;
+        font-weight: bold;
+        font-size: 19px;
+    }
+    input{
+        height: 80px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    textarea{
+        height: 250px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .boton-enviar{
+        width: 30%;
+        height: 70px;
+        font-size: 22px;
+    }
+    
+}
+
+
+/* Tamaño Para Escritorio */
+
+
+@media (min-width: 920px) {
+    .fin{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .imagen-fondo{
+        background-image: url('../img/img-fondo.jpg');
+        background-size: cover;
+    }
+    .formulario-container{
+        margin: 0;
+    }
+    .p-contacto{
+        font-size: 18px;
+    }
+    .input{
+        height: 50px;
+        font-size: 16px;
+    }
+    .label__input{
+        font-size: 16px;
+        top: 15px;
+    }
+    .label__input-active{
+        font-size: 14px;
+        top: 0;
+        left: 0;
+    }
+    textarea.input{
+        height: 200px;
+    }
+    .boton-enviar{
+        width: 20%;
+        height: 50px;
+        font-size: 16px;
+    }
+}
